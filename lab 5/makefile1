@@ -1,0 +1,23 @@
+#format is target-name: target dependencies
+#{-tab-}actions
+
+# All Targets
+all: myshell
+
+myshell: task1c.o line_parser.o
+	gcc -g -Wall -o myshell task1c.o line_parser.o
+
+# Depends on the source and header files
+line_parser.o: line_parser.c line_parser.h
+	gcc -g -Wall -c -o line_parser.o line_parser.c 
+ 
+task1c.o: task1c.c
+	gcc -g -Wall -c -o task1c.o task1c.c
+
+
+#tell make that "clean" is not a file name!
+.PHONY: clean
+
+#Clean the build directory
+clean: 
+	rm -f *.o myshell
