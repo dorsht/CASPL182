@@ -1,5 +1,5 @@
 # CASPL182
-Assignments and lab tasks from the course Computer Architecture and system programming laboratory in BGU university
+Assignments and lab tasks from the course Computer Architecture and system programming laboratory in BGU university.
 I wrote the labs in C and the assignments in C and Assembly x86 64.
 Assignment 1 - Postfix based calculator.
 Assignment 2 - Find single root of a polynomial complex coefficients, using Newton Raphson method. 
